@@ -78,7 +78,7 @@ void LinkedList::deleteNodeAtPosition(int position){
         else{
             while (temp->next != NULL)
             {
-                if (currentPosition = position-1)
+                if (currentPosition == position-1)
                 {
                     temp->next = temp->next->next; 
                     return;  
@@ -88,8 +88,7 @@ void LinkedList::deleteNodeAtPosition(int position){
             }   
         }
 
-        cout << "The given position is out of scope of deletion.\n";
-        
+        cout << "The given position is out of scope of deletion.\n";   
     }  
 }
 
@@ -113,4 +112,3 @@ int main(){
     return 0;
 }
 
-//debug delete function

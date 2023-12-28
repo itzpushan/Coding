@@ -3,7 +3,7 @@ using namespace std;
 #define MAX 1000
 
 class Stack{
-    int top;
+    int top=-1;
 
     public:
         int a[MAX];

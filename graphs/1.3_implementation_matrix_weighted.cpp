@@ -5,7 +5,6 @@ int main(){
 
     int n,m;
     cin >> n >> m;
-
     // n ======= no of vertices
     // m ======= no of edges
 
@@ -20,10 +19,10 @@ int main(){
 
     for (int i = 0; i < m; i++)
     {
-        int u,v;
-        cin >> u >> v;
-        adjacenty[u][v]=1;
-        adjacenty[v][u]=1;
+        int u,v,w;
+        cin >> u >> v >> w;
+        adjacenty[u][v]=w;
+        adjacenty[v][u]=w;
     }
 
     for (int i = 1; i < n+1; i++)
@@ -33,8 +32,7 @@ int main(){
         }
         cout << endl;
     }
-    
-    
+
 
 
     return 0;
